@@ -20,7 +20,7 @@ public class ConnectionProvider {
   public Connection getConnection(){
 
          try {
-             return DriverManager.getConnection("jbdc:derby://localhost:1527/user");
+             return DriverManager.getConnection("jbdc:derby://localhost:1527/users");
          } catch (SQLException e) {
              e.printStackTrace();
          }
