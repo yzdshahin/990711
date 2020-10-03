@@ -1,14 +1,14 @@
 
 package Model.Dao;
 
-import Model.Entity.LoginBean;
+import Model.Entity.Userinfo;
 import Model.Util.ConnectionProvider;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LoginDao {
-     public String AuthorizeLogin(LoginBean bean) throws SQLException {
+     public String AuthorizeLogin(Userinfo bean) throws SQLException {
             String username=bean.getUsername();
             String password=bean.getPassword();
         

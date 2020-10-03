@@ -3,7 +3,7 @@ package Controller;
 //https://www.onlyxcodes.com/2018/02/java-mvc-login-and-register-script.html
 //https://www.javawebtutor.com/articles/maven/maven_simple_login_application.php
 import Model.Dao.LoginDao;
-import Model.Entity.LoginBean;
+import Model.Entity.Userinfo;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -25,7 +25,7 @@ public class LoginController extends HttpServlet {
                String username = request.getParameter("txt_username");
                String password = request.getParameter("txt_password");
                
-               LoginBean loginBean =new LoginBean();
+               Userinfo loginBean =new Userinfo();
                loginBean.setUsername(username);
                loginBean.setPassword(password);
                LoginDao loginDao= new LoginDao();
